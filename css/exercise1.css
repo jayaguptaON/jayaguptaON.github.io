@@ -1,0 +1,27 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../images/camera.jpg);
+    backdrop-filter: blur(5px);
+    color: #DBFAFF;
+}
+h1 {
+    color: #FFC18F;
+}
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #76AAB2;
+}
+
+a:visited {
+    color: #76AAB2;
+}
+a:hover {
+    font-weight: bold;
+    font-size: larger;
+}
+blockquote {
+    color: #FFC18F;;
+}
