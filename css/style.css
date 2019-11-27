@@ -1,124 +1,170 @@
-/* my first css */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-}
-img {
-    border: 10px solid rgb(255, 205, 43);
-}
-
-.floatleft {
-    float: left;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-}
-
-body:after {
-    content: "";
-    display: table;
-    clear: both; 
-}
-
-h1 {
-    border: 5px solid rgb(255, 205, 43);
-    text-align: center;
-    font-size: 3.5rem;
-    background-color: whitesmoke;
-}
-
-blockquote {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-blockquote p {
-    margin-bottom: 0;
-}
-
-cite {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-h2 {
-    color: darkolivegreen;
-}
-
-.bigbold {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-ol {
+body, html{
+    height: 100%;
     margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  ol li {
-    counter-increment: step-counter;
-    margin-bottom: 10px;
-    display: flex;
-    position: relative;
-    padding-left: 35px;
-  }
-  
-  ol li::before {
-    position: absolute;
-    left: -5px;
-    content: counter(step-counter)".";
-    margin-right: 5px;
-    font-size: 100%;
-    color: black;
-    padding: 0 8px;
-    border-radius: 3px;
-  }
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth;
+}
 
-ul{
-    list-style-position: inside;
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('../images/BG.jpg');
+    min-height: 100%;
+    opacity: 0.9;
+}
+
+.pimg2{
+    background-image: url('../images/BG.jpeg');
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url('../images/pic3.jpeg');
+    min-height: 400px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-light{
+    background-color: #f4f4ff;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #f4f4ff;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .bordertrans{
+    background-color: transparent;
+    color: #fff;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    background-color: #fff;
+    color: #111;
+    font-size: 70px;
+    padding: 35px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+div p{
+    background-color: #fff;
+    color: #111;
+    padding: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 nav{
-    margin-bottom: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav.black{
+    background: rgba(0,0,0,0.8);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+
+nav.logo {
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
     margin: 0;
-    text-align: center;
+    padding: 0;
+    display: flex;
 }
 
-nav li {
-    width: 10rem;
-    text-align: center;
-    margin-bottom: 0;
-    display: inline-block;
+nav ul li {
+    list-style: none;
 }
 
-nav a {
-    display: block;
-    text-align: center;
-}
-
-a:link {
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
     text-decoration: none;
-    color: rgb(59, 72, 45);  
+    text-transform: uppercase;
+    transition: .3s;
 }
-a:visited {
-    color: rgb(144, 3, 251);
+
+nav.black ul li a{
+    color: #fff;
 }
-a:hover {
-    font-weight: bold;
+
+nav ul li a:focus {
+    outline: none;
 }
-a.instagram:link {
-    color: rgb(205,72,107)
+
+nav ul li a.active {
+    background: #E2472F;
+    color: #fff;
+    border-radius: 6px;
 }
-a.instagram:hover {
-    font-weight: bold;
-    color: rgb(205,72,107)
+
+nav ul li a:hover{
+    color: #E2472F;
 }
