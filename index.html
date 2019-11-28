@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jaya Gupta</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript">
@@ -20,66 +21,61 @@
     </script>
 </head>
 <body>
-        <div id = "home" class=pimg1>
+    <header>
+        <div id = "home">
                 <h1>Jaya Gupta</h1>
                 <p>Personal Website</p>
-                <a class="btn btn-primary btn-xl js-scroll-trigger button" href="#about" >↓</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger buttonarrow" href="#about" >↓</a>
         </div>
+
+        <div class="wrapper">
+                <nav>
+                    <!--<div class="logo"></div>-->
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <div class=section-light>
+        <section id="about" class="section section-light">
+            <h2>Hi, I'm Jaya!</h2>
+            <p>
+              I'm an engineering student interested in computer science. Below is a little bit more about my interests & hobbies as well as my resumé. 
+            </p>
+            <p>
+                <a class="button" href="#">More About Me</a>
+                <a class="button" href="Jaya Gupta - Resume.pdf">Resumé</a>
+            </p>
+        </section>
+
+        <hr>
     
         <section id="projects" class="section section-light">
             <h2>Projects</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi distinctio voluptate illo molestias incidunt asperiores. Iure, nobis? Exercitationem rem pariatur ea? Cumque perferendis explicabo laboriosam quas. Voluptatibus iure exercitationem mollitia, dignissimos atque distinctio enim non commodi! Qui voluptate debitis in placeat, officia consectetur velit quam asperiores quasi! Nulla veritatis quidem hic maiores consequuntur atque! Quam libero id laudantium quo obcaecati, deleniti perspiciatis ab praesentium est velit eos consectetur voluptatum hic necessitatibus facilis voluptas beatae quidem porro natus numquam animi error. Consectetur nulla, voluptatum est sunt aliquid amet consequuntur, commodi unde at necessitatibus incidunt dolore repudiandae soluta perferendis esse harum?
+                Here are some links to projects I have made for hackathons and my web development program.
+            </p>
+            <p>
+                <a class="button" href="https://github.com/jayaguptaON">GitHub</a>
+                <a class="button" href="https://devpost.com/jayagupta?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">Devpost</a>
+                <a class="button" href="webdevbootcamp.html">Web Development Program</a>
             </p>
         </section>
-    
-        <div class="pimg2">
-                <div class="ptext">
-                    <span class="bordertrans">
-                        Image 2 Text
-                    </span>
-                </div>
-            </div>
-    
-            <section id="about" class="section section-dark">
-                    <h2>About</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi distinctio voluptate illo molestias incidunt asperiores. Iure, nobis? Exercitationem rem pariatur ea? Cumque perferendis explicabo laboriosam quas. Voluptatibus iure exercitationem mollitia, dignissimos atque distinctio enim non commodi! Qui voluptate debitis in placeat, officia consectetur velit quam asperiores quasi! Nulla veritatis quidem hic maiores consequuntur atque! Quam libero id laudantium quo obcaecati, deleniti perspiciatis ab praesentium est velit eos consectetur voluptatum hic necessitatibus facilis voluptas beatae
-                    </p>
+
+        <hr>
+        
+        <section id="contact" class="section section-light">
+            <h2>Contact Me!</h2>
+            <a href="https://www.linkedin.com/in/iamjayagupta/"><i class="fab fa-linkedin"></i></a>
         </section>
-        <div class="pimg3">
-                <div class="ptext">
-                    <span class="bordertrans">
-                        Image 3 Text
-                    </span>
-                </div>
-        </div>
-        <section id="links" class="section section-light">
-                <h2>Links</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi distinctio voluptate illo molestias incidunt asperiores. Iure, nobis? Exercitationem rem pariatur ea? Cumque perferendis explicabo laboriosam quas. Voluptatibus iure exercitationem mollitia, dignissimos atque distinctio enim non commodi! Qui voluptate debitis in placeat, officia consectetur velit quam asperiores quasi! Nulla veritatis quidem hic maiores consequuntur atque! Quam libero id laudantium quo obcaecati, deleniti perspiciatis ab praesentium est velit eos consectetur voluptatum hic necessitatibus facilis voluptas beatae
-                </p>
-    </section>
 
-    <div id="contact" class="pimg1">
-            <div class="ptext">
-                <span class="contactme">
-                    Contact Me!
-                </span>
-            </div>
     </div>
 
-    <div class="wrapper">
-            <nav>
-                <div class="logo">LOGO</div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#links">Links</a></li>
-                    <li><a class="active" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-    </div>
+
 </body>
 </html>
