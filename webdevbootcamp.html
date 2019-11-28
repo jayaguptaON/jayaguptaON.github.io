@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Development Bootcamp</title>
+    <title>Web Development Program</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="css/webdev.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black')
+            }
+            else {
+                $('nav').removeClass('black')
+            }
+        })
+    </script>
 </head>
-<body>
-    <!-- Load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <h1>Web Development Program</h1>
-    
+<body>
+    <header>
+        <div class="wrapper">
+                <nav>
+                    <!--<div class="logo"></div>-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>                    
+                </nav>
+        </div>
+    </header>
     <section>
-        <ul>
-            <li><a href="bookchapter.html"> Exercise 1: Book Chapter</a></li>
-            <li><a href="alienblog.html">Exercise 2: Alien Blog</a></li>
-            <li><a href="forms.html">Exercise 3: Alien Abduction Form</a></li>
-        </ul>
+    <h1>Web Development Program</h1>
+
+    <p>
+        In 2019, I completed the <a class=link href="https://frontendmasters.com/bootcamp/">Frontend Masters Online Web Development Program</a> to get a good foundation in HTML, CSS, and JavaScript. Below are links to projects I made for the program:
+    </p>
+    
+        <a class="button" href="bookchapter.html">Exercise 1: Styling a Book Chapter</a>
+        <a class="button" href="alienblog.html">Exercise 2: Styling a Blog with FlexBox</a>
+        <a class="button" href="forms.html">Exercise 3: Creating a Form</a>
     </section>
 </body>
 </html>
