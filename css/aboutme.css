@@ -89,7 +89,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 10px 35px;
     box-sizing: border-box;
     transition: .3s;
     background-color: #000;
@@ -101,14 +101,22 @@ p{
     padding: 10px 100px;
 }*/
 
-/*nav .logo{
-    padding: 22px 20px;
-    height: 80px;
+nav .logo{
     float: left;
-    font-size: 24px;
-    transition: .3s;
+    width: 50%;
+}
+
+nav .logo a{
+    line-height: 40px;
     color: #fff;
-}*/
+    text-decoration: none;
+    transition: .3s;
+    font-size: 20px;
+}
+
+nav .logo a:hover{
+    color: #06AAE9;
+}
 
 nav ul{
     list-style: none;
@@ -129,6 +137,10 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     transition: .3s;
+}
+
+nav ul li a:last-child{
+    padding-right: 0;
 }
 
 /*nav.black ul li a{
