@@ -76,15 +76,25 @@ h1{
 }
 
 #home p{
-    /*background-color: #fff;*/
+    /*background-color: #fff; SKIP THIS */
     color: #404040;
     padding: 10px;
     font-size: 20px;
-    /*text-transform: uppercase;*/
+    /*text-transform: uppercase; SKIP THIS */
     letter-spacing: 2px;
     margin-bottom: 50px;
     font-weight: bold;
 }
+
+#home .subtitle {
+    animation: 
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes blink-caret {
+    from {border-color: #06aae9;} 
+    to {border-color: transparent;}
+    50% { border-color: transparent; }
+  }
 
 hr{
     margin: 0 30%;
