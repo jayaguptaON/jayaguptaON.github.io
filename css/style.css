@@ -1,3 +1,7 @@
+:root {
+    --mainColor: #06aae9;
+}
+
 body, html{
     height: 100%;
     margin: 0;
@@ -5,7 +9,7 @@ body, html{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666;
+    color: #323133;
     scroll-behavior: smooth;
 }
 
@@ -21,7 +25,7 @@ section{
 
 .section-light{
     background-color: #ffffff;
-    color: #666;
+    color: #323133;
 }
 
 section h2{
@@ -34,18 +38,13 @@ section h2{
 section p{
     width: 75%;
     margin-bottom: 2.5rem;
-}
-
-section a{
-    text-decoration: none;
-    color: #06AAE9;
+    font-size: 17px;
 }
 
 /*.section-dark{
     background-color: #282e34;
     color: #ddd;
 }*/
-
 
 #home{
     display: flex;
@@ -64,7 +63,7 @@ section a{
 
 h1{
     /*background-color: #fff;*/
-    color: #404040;
+    color: #323133;
     font-size: 70px;
     padding: 35px;
     text-transform: capitalize;
@@ -77,7 +76,7 @@ h1{
 
 #home p{
     /*background-color: #fff; SKIP THIS */
-    color: #404040;
+    color: #323133;
     padding: 10px;
     font-size: 20px;
     /*text-transform: uppercase; SKIP THIS */
@@ -104,7 +103,7 @@ hr{
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
-    color: #404040;
+    color: #323133;
     /*background-color: #ffffff;
     padding-top: 0;
     padding-bottom: 3px;
@@ -115,6 +114,85 @@ hr{
 .buttonarrow:hover{
     color: #06AAE9;
 }
+
+.link{
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #323133;
+    text-decoration: none;
+    transition: background-size .2s;
+ }
+
+ .link:focus{
+    outline: none;
+ }
+
+ .link:hover{
+    background-size: 4px 50px;
+}
+
+.contact-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.contact-bar i{
+    font-size: 40px;
+    color: #323133;
+    display: block;
+    cursor: pointer;
+}
+
+.contact-bar i:hover {
+    color: var(--mainColor)
+}
+
+.contact-bar a{
+    text-decoration: none;
+}
+
+.contact-bar span {
+    position: relative;
+    width: 120px;
+    background: #323133;
+    color: #fff;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    opacity: 0;
+    transition: 0.3s opacity;
+    cursor: default;
+}
+
+.contact-bar span:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    background: #323133;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg) translateY(12%);
+}
+
+.contact-bar a:hover > span{
+    opacity: 1;
+}
+
+/* .contact-bar i:hover{
+    color: #06AAE9;
+} */
 
 nav{
     position: fixed;
@@ -204,15 +282,6 @@ nav ul li a:hover{
 .button:hover{
     background-color: #666;
     color: #fff;
-}
-
-i{
-    font-size: 40px;
-    color: #666;
-}
-
-i:hover{
-    color: #06AAE9;
 }
 
 footer {
