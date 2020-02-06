@@ -1,3 +1,6 @@
+:root {
+    --mainColor: #06aae9;
+}
 body, html {
     height: 100%;
     margin: 0;
@@ -5,7 +8,7 @@ body, html {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666;
+    color: #323133;
     scroll-behavior: smooth;
 }
 
@@ -19,7 +22,7 @@ section{
 
 h1{
     /*background-color: #fff;*/
-    color: #666;
+    color: #323133;
     font-size: 70px;
     padding: 35px;
     text-transform: capitalize;
@@ -32,29 +35,38 @@ h1{
 
 section p{
     width: 66%;
-    color: #666;
+    color: #323133;
     text-align: center;
 }
 
 .button{
     text-decoration: none;
-    border: #666 1px solid;
+    border: #323133 1px solid;
     padding: 20px 20px;
     justify-content: center;
     text-align: center;
     margin-bottom: 1rem; 
-    color: #666;
+    color: #323133;
     width: 25%;
  }
  
  .button:hover{
-     background-color: #666;
+     background-color: #323133;
      color: #fff;
  }
 
  .link{
-     text-decoration: none;
-     color: #06AAE9;
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #323133;
+    text-decoration: none;
+    transition: background-size .2s;
  }
 
  .link:focus{
@@ -62,8 +74,8 @@ section p{
  }
 
  .link:hover{
-     font-weight: bold;
- }
+    background-size: 4px 50px;
+}
 
  nav{
     position: fixed;
