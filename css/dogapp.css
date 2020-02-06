@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+nav {
+    background-color: aquamarine;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    list-style: none;
+}
+
+select {
+    font-family: 'Comfortaa', cursive;
+    padding: 5px;
+}
+
+.dogs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 79vh;
+    overflow: hidden;
+}
+
+.dog-image {
+    max-width: 100%;
+    max-height: 79vh;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.spinner {
+    font-size: 50px;
+    text-align: center;
+    animation: 2s spin infinite linear;
+    display: none;
+}
+
+.dog-image {
+    display: none;
+}
+
+.show {
+    display: block;
+}
