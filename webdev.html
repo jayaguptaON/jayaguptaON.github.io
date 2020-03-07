@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Development Program</title>
+    <title>Web Development Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="css/webdev.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(window).on('scroll', function() {
             if($(window).scrollTop()) {
@@ -25,6 +26,7 @@
         <div class="wrapper">
                 <nav>
                     <div class="logo"><a href="index.html#projects">JG</a></div>
+                    <div class="toggle"><i class="fa fa-bars menu" aria-hidden="true"></i></div>
                     <ul>
                         <li><a href="index.html#about">About Me</a></li>
                         <li><a href="index.html#projects">Projects</a></li>
@@ -35,7 +37,7 @@
         </div>
     </header>
     <section>
-    <h1>Web Development Program</h1>
+    <h1>Web Development Projects</h1>
     <p>
         Below are all the projects I made through a free online web development class hosted by <a class=link href="https://frontendmasters.com/bootcamp/" target="_blank">Frontend Masters</a>:
     </p>
@@ -50,6 +52,14 @@
         <a class="button" href="molegame.html" target="_blank">Feed-A-Mole Game</a>
         <a class="button" href="pie in the sky project/pieinthesky.html" target="_blank">Pie-in-the-Sky Bakery Webpage</a>
     </section>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 </html>
 
