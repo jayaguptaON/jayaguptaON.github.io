@@ -268,6 +268,20 @@ nav ul li a:hover{
     color: #06AAE9;
 }
 
+.toggle {
+    float: right;
+    display: none;
+    line-height: 40px;
+    color: #111;
+}
+nav.black .toggle {
+    color: #fff;
+}
+
+nav .toggle i:hover{
+    color: var(--mainColor);
+}
+
 .button{
    text-decoration: none;
    border: #666 2px solid;
@@ -309,4 +323,56 @@ footer div{
 .footer a{
     text-decoration: none;
     color: #06AAE9;
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        line-height: 4.5rem;
+    }
+    .toggle {
+        display: block;
+        margin-right: 35px;
+    }
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav .logo {
+        margin-left: 35px;
+    }
+    nav.black {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav.black ul li a{
+        color: #fff;
+    }
+    nav ul {
+        float: none;
+        display: none;
+        margin-top: 2.5em;
+        text-align: center;
+        background-color: #111;
+        width: 100%;
+        height: 100vh;
+    }
+    nav ul li {
+        display: block;
+        line-height: 80px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+    }
+    nav ul li a {
+        font-size: 15px;
+        color: #fff;
+    }
+    .active {
+        display: block;
+    }
+    .contact-bar {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    section {
+        height: 100%;
+    }
 }

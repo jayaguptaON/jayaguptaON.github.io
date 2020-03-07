@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Jaya</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="css/aboutme.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(window).on('scroll', function() {
             if($(window).scrollTop()) {
@@ -25,6 +26,7 @@
         <div class="wrapper">
                 <nav>
                     <div class="logo"><a href="index.html#home">JG</a></div>
+                    <div class="toggle"><i class="fa fa-bars menu" aria-hidden="true"></i></div>
                     <ul>
                         <li><a href="#" style="color:#06AAE9;">About Me</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -58,9 +60,9 @@
 
         <h3>Hackathons</h3>
         <p><span style="padding-left: 2em">I</span> enjoy attending hackathons because it gives me the opportunity to try solving real problems with tech. I get to develop my skills while meeting other students. My first hackathon was ECOding Hacks hosted by TOHacks at York University, where my team (pictured below) created a web-app called <a href="projects.html#envirokids" class="link">EnviroKids</a> to educate kids about the environment. EnviroKids won the top prize in its category.</p> 
-        <img src="images/ecodinghacks.jpg" alt="ECOding Hacks Team" width="300" height="200">
+        <img class="hackathonimages" src="images/ecodinghacks.jpg" alt="ECOding Hacks Team" width="300" height="200">
         <p>Next, I attended WiC Hacks 2019 at the Rochester Institute of Technology. My team created <a href="projects.html#meelia" class="link">MeeLia</a>, a mental health voice assistant. MeeLia won the MLH Best Hardware Award. Most recently, I attended TechTogether 2019 in Boston. There, my team (pictured below) competed in the IBM challenge with an AI program called <a href="projects.html#smarthire" class="link">SmartHire</a> whose goal was to help eliminate AI bias in the hiring process. Our project won the IBM Research Award and the Liberty Mutual Best Hack for Gender Equality Award.</p>
-        <img src="images/techtogether.jpg" alt="TechTogether Boston Hackathon Team" width="300" height="200">
+        <img class="hackathonimages" src="images/techtogether.jpg" alt="TechTogether Boston Hackathon Team" width="300" height="200">
 
         <h3>BioTEC Conference</h3>
         <p><span style="padding-left: 2em">I</span> help organize the University of Waterloo BioTEC Conference, an annual student-run biotechnology and bioengineering conference that strives to promote some of the most cutting edge developments at the intersection of biology and engineering. You can find more info about BioTEC <a href="https://www.uwbiotec.ca/" class="link" target="_blank">here</a>.</p>
@@ -71,9 +73,17 @@
         <h3>Traveling</h3>
         <p><span style="padding-left: 2em">I</span> enjoy traveling to new places. Most recently, I visited New York City, but I've also been to Quebec City, Ottawa, Orlando, Boston, Washington, DC, and India. There are lots of other places I'd like to visit - check out my <a href="impossiblelist.html#travelgoals" class="link">impossible list</a> for more.</p>
         <p><span style="padding-left: 2em">M</span>y favourite trip so far has been to Quebec City where I had the opportunity to join the World Vision delegation of 75 students from across Canada to the G7 Summit in June 2018 and participate in a demonstration (pictured below) to advocate for girls' education. Us 75 students represented the 75 million children out-of-school around the world due to crisis. Our demonstration was a success, as the G7 countries later announced they would pledge $3.8 billion for girls' education, $400 million of which were pledged by Canada. Read more about the story <a href="https://www.thestar.com/news/canada/2018/06/08/canada-to-announce-400m-for-girls-education-at-g7-summit.html" class="link" target="_blank">here</a>.</p>
-        <img src="images/G7demo.jpeg" alt="G7 Demo" width="500" height="333">
-        <img src="images/g7demonstration.jpg" alt="G7 Demonstration" width="500" height="333">
+        <img class="quebecimages" src="images/G7demo.jpeg" alt="G7 Demo" width="500" height="333">
+        <img class="quebecimages" src="images/g7demonstration.jpg" alt="G7 Demonstration" width="500" height="333">
         </div>
     </section>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 </html>

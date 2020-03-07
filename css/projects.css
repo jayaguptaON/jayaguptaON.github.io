@@ -113,7 +113,7 @@ div{
 
 nav .logo{
     float: left;
-    width: 50%;
+    width: 0%;
 }
 
 nav .logo a{
@@ -163,4 +163,65 @@ nav ul li a:focus {
 
 nav ul li a:hover{
     color: #06AAE9;
+}
+
+.toggle {
+    float: right;
+    display: none;
+    line-height: 40px;
+    color: #fff;
+    width: 0%;
+}
+
+nav.black .toggle {
+    color: #fff;
+}
+
+nav .toggle i:hover{
+    color: var(--mainColor);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        line-height: 4.5rem;
+    }
+    .toggle {
+        display: block;
+        margin-right: 35px;
+    }
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav .logo {
+        margin-left: 35px;
+    }
+    nav.black {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav.black ul li a{
+        color: #fff;
+    }
+    nav ul {
+        float: none;
+        display: none;
+        margin-top: 2.5em;
+        text-align: center;
+        background-color: #111;
+        width: 100%;
+        height: 100vh;
+    }
+    nav ul li {
+        display: block;
+        line-height: 80px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+    }
+    nav ul li a {
+        font-size: 15px;
+        color: #fff;
+    }
+    .active {
+        display: block;
+    }
 }

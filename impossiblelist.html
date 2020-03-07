@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Impossible List</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="css/impossiblelist.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(window).on('scroll', function() {
             if($(window).scrollTop()) {
@@ -24,7 +25,8 @@
     <header>
         <div class="wrapper">
                 <nav>
-                    <div class="logo"><a href="#home">Jaya Gupta</a></div>
+                    <div class="logo"><a href="#home">JG</a></div>
+                    <div class="toggle"><i class="fa fa-bars menu" aria-hidden="true"></i></div>
                     <ul>
                         <li><a href="index.html#about">About Me</a></li>
                         <li><a href="index.html#projects">Projects</a></li>
@@ -113,5 +115,13 @@
         </ul>
     </div>
     </section>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 </html>
