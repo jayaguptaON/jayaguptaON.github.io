@@ -87,7 +87,7 @@ h1{
 
 #home .subtitle {
     animation: 
-      blink-caret .75s step-end infinite;
+      blink-caret 0.4s step-end infinite;
   }
   @keyframes blink-caret {
     from {border-color: #06aae9;} 
