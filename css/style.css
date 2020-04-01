@@ -57,7 +57,7 @@ section p{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../images/computer.png');
+    background-image: url('../images/computer.png');    
     height: 100vh;
 }
 
