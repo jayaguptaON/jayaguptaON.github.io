@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Finder</title>
+        <script src="js/store-data.js"></script>
+        <script src="js/starbucksfinder.js"></script>
+    <link rel="stylesheet" href="css/starbucksfinder.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js
+    "></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">Starbucks Finder</div>
+    <div class="search-container">
+        <div class="search">
+            <input id="zipcode-input" type="text" placeholder="Enter zip code">
+            <i class="fas fa-search" onclick="searchByZip()"></i>
+        </div>
+    </div>
+    <div class="stores-list-container">
+        <div class="stores-list">
+            <div class="store">
+                <div class="store-background">
+                <div class="store-info">
+                    <div class="storeaddress">
+                        <span>8480 Beverly Blvd</span>
+                        <span>Los Angeles, CA 90048</span>
+                    </div>
+                    <div class="storephone">
+                        (123) 456-7890
+                    </div>
+                </div>
+
+                <div class="store-number-container">
+                    <div class="store-number">
+                       1 
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+
+</body>
+</html>
