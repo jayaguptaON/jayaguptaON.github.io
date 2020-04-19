@@ -54,6 +54,8 @@ div{
 
 h3{
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 p{
@@ -76,9 +78,10 @@ p span {
  }
  
 .button:hover{
-     background-color: #666;
-     color: #fff;
- }
+    background-color: #666;
+    color: #fff;
+}
+
 
 .link{
     background:
