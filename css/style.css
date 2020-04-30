@@ -281,6 +281,10 @@ nav.black .toggle {
 nav .toggle i:hover{
     color: var(--mainColor);
 }
+nav .toggle i:focus{
+    color: var(--mainColor);
+    outline: none;
+}
 
 .button{
    text-decoration: none;
@@ -298,7 +302,7 @@ nav .toggle i:hover{
     color: #fff;
 }
 
-footer {
+/* footer {
     background-color: #404040;
     display: flex;
     flex-flow: row nowrap;
@@ -323,7 +327,7 @@ footer div{
 .footer a{
     text-decoration: none;
     color: #06AAE9;
-}
+} */
 
 @media screen and (max-width: 550px) {
     h1 {
@@ -350,21 +354,28 @@ footer div{
     nav ul {
         float: none;
         display: none;
-        margin-top: 2.5em;
+        margin-top: 50px;
         text-align: center;
         background-color: #111;
         width: 100%;
         height: 100vh;
     }
-    nav ul li {
+    /* nav ul li {
         display: block;
         line-height: 80px;
         border-bottom: 1px solid rgba(0,0,0,0.5);
-    }
+    } */
     nav ul li a {
+        display: block;
+        line-height: 80px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
         font-size: 15px;
         color: #fff;
         padding-left: 0;
+    }
+    nav ul li a:hover {
+        background-color: var(--mainColor);
+        color: #fff !important;
     }
     .active {
         display: block;
