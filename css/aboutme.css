@@ -191,6 +191,10 @@ nav.black .toggle {
 nav .toggle i:hover{
     color: var(--mainColor);
 }
+nav .toggle i:focus{
+    color: var(--mainColor);
+    outline: none;
+}
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -223,16 +227,24 @@ nav .toggle i:hover{
         width: 100%;
         height: 100vh;
     }
-    nav ul li {
+    /* nav ul li {
         display: block;
         line-height: 80px;
         border-bottom: 1px solid rgba(0,0,0,0.5);
-    }
+    } */
     nav ul li a {
+        display: block;
+        line-height: 80px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
         font-size: 15px;
         color: #fff;
         padding-left: 0;
     }
+    nav ul li a:hover {
+        background-color: var(--mainColor);
+        color: #fff !important;
+    }
+    
     .active {
         display: block;
     }
