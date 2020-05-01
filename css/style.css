@@ -177,11 +177,14 @@ hr{
 
 .contact-bar span:before {
     content: '';
+    color: #323133;
     width: 10px;
     height: 10px;
     position: absolute;
+    /* top: -16.5px; */
     top: -6px;
     background: #323133;
+    /* left: 45%; */
     left: 50%;
     transform: translateX(-50%) rotate(45deg) translateY(12%);
 }
@@ -282,7 +285,7 @@ nav .toggle i:hover{
     color: var(--mainColor);
 }
 nav .toggle i:focus{
-    color: var(--mainColor);
+    /* color: var(--mainColor); */
     outline: none;
 }
 
@@ -380,11 +383,20 @@ footer div{
     .active {
         display: block;
     }
+    nav .toggle.active i{
+        color: var(--mainColor) !important;
+    }
     .contact-bar {
         display: grid;
         grid-template-columns: auto auto;
     }
-    section {
-        height: 100%;
+    .disappear{
+        display: none;
+    }
+    .about {
+        height: 100vh;
+    }
+    .about h2{
+        padding-top: 120px;
     }
 }
