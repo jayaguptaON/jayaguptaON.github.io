@@ -251,6 +251,12 @@ nav .toggle i:focus{
     nav .toggle.active i{
         color: var(--mainColor) !important;
     }
+    nav .toggle i:hover{
+        color: inherit;
+    }
+    nav .logo a:hover {
+        color: inherit;
+    }
     .mainparagraph {
         display: flex;
         flex-direction: column;

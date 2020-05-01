@@ -386,12 +386,19 @@ footer div{
     nav .toggle.active i{
         color: var(--mainColor) !important;
     }
+    nav .toggle i:hover{
+        color: inherit;
+    }
+    nav .logo a:hover {
+        color: inherit;
+    }
     .contact-bar {
         display: grid;
         grid-template-columns: auto auto;
     }
     .disappear{
         display: none;
+        opacity: 0;
     }
     .about {
         height: 100vh;

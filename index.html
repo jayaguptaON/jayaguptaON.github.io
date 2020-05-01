@@ -106,13 +106,15 @@
         $('.menu').click(function(){
             $('ul').toggleClass('active');
             $('.toggle').toggleClass('active');
-            $('.contact-bar').toggleClass('disappear');
+            $('.tooltip').toggleClass('disappear');
         })
         $('.navbarlink').click(function(){
             $('ul').toggleClass('active');
+            $('.toggle').toggleClass('active');
         })
         $('.logo').click(function(){
-            $('ul').toggleClass('active');
+            $('ul').removeClass('active');
+            $('.toggle').removeClass('active');
         })
     })
 </script>
