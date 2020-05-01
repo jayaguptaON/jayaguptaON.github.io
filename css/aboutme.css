@@ -248,6 +248,9 @@ nav .toggle i:focus{
     .active {
         display: block;
     }
+    nav .toggle.active i{
+        color: var(--mainColor) !important;
+    }
     .mainparagraph {
         display: flex;
         flex-direction: column;
