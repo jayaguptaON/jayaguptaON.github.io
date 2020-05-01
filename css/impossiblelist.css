@@ -241,6 +241,9 @@ nav .toggle i:focus{
     .active {
         display: block;
     }
+    nav .toggle.active i{
+        color: var(--mainColor) !important;
+    }
 }
 
 @media screen and (max-width: 550px) {
