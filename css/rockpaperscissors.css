@@ -1,12 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  padding: 0;
+  border: 5px solid #0069ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
   color: #0069ed;
   margin-bottom: 30px;
-  font-family: sans-serif;
 }
 
 #result {
-  font-family: sans-serif;
   text-align: center;
   margin-bottom: 30px;
 
@@ -24,7 +40,7 @@ button {
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;

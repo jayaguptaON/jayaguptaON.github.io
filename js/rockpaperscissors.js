@@ -2,38 +2,38 @@ const choices = ['rock','paper','scissors'];
 
 function pickAWinner(myChoice, compChoice) {
   if (myChoice === compChoice){
-    return 'It\'s a tie';
+    return 'It\'s a tie!';
   }
 
   else if (myChoice === 'rock'){
     if(compChoice === 'paper'){
-    return 'You lose because paper beats rock!';
+    return 'You LOSE because paper beats rock!';
     }
     else if (compChoice === 'scissors'){
-      return 'You win because rock beats scissors!';
+      return 'You WIN because rock beats scissors!';
     }
   }
 
   else if (myChoice === 'paper'){
     if(compChoice === 'rock'){
-    return 'You win because paper beats rock!';
+    return 'You WIN because paper beats rock!';
     }
     else if (compChoice === 'scissors'){
-      return 'You lose because scissors beats paper!';
+      return 'You LOSE because scissors beats paper!';
     }
   }
 
   else if (myChoice === 'scissors'){
     if(compChoice === 'rock'){
-    return 'You lose because rock beats scissors!';
+    return 'You LOSE because rock beats scissors!';
     }
     else if (compChoice === 'paper'){
-      return 'You win because scissors beats paper!';
+      return 'You WIN because scissors beats paper!';
     }
   }
 
   else {
-    return 'Your choice makes no sense - press play to try again';
+    return 'Your choice makes no sense. Please choose from rock, paper, and scissors. Press play to try again!';
   }
 }
 
